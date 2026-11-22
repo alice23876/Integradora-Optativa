@@ -1,0 +1,7 @@
+-r requirements.txt
+
+pytest>=8          # pytest   (las pruebas de interfaz corren sin pantalla: QT_QPA_PLATFORM=offscreen)
+moto>=5            # DynamoDB simulado en memoria para las pruebas de contrato
+# Opcional: solo si quieres levantar un DynamoDB falso como servidor aparte (moto_server)
+# flask
+# flask-cors

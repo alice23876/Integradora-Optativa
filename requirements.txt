@@ -1,0 +1,12 @@
+# Marketplace — interfaz gráfica (Python 3.11 o superior; probado en 3.13)
+#   python -m venv .venv && source .venv/bin/activate      (Windows: .venv\Scripts\activate)
+#   pip install -r requirements.txt
+
+PySide6>=6.7,<7        # interfaz gráfica (Qt 6)
+boto3>=1.34            # DynamoDB (modo «directo»)
+SQLAlchemy>=2.0        # MySQL (modo «directo»), solo SQLAlchemy Core
+PyMySQL>=1.1           # controlador de MySQL en Python puro
+cryptography>=42       # PyMySQL lo necesita para MySQL 8 (caching_sha2_password)
+bcrypt>=4.1            # contraseñas de las cuentas (modo «directo» y «demo»)
+requests>=2.31         # cliente HTTP (modo «api»)
+python-dotenv>=1.0     # lee el archivo .env
